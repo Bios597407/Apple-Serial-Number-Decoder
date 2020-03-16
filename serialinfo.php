@@ -324,7 +324,7 @@ foreach ($someArray as $key => $value) {
 if($count == 0) {
 
 	$fetch_url = "http://support-sp.apple.com/sp/product?cc=".$serial_last4."&lang=en_US";
-    $url = str_replace( "&amp;", "&", urldecode(trim($fetch_url)) );
+    	$url = str_replace( "&amp;", "&", urldecode(trim($fetch_url)) );
 	$xml_obj = simplexml_load_file($url);
 	$device_name = (string)$xml_obj->configCode;
 }
@@ -354,7 +354,7 @@ if(!empty($xml_obj) && file_exists('database.json')) {
 	$extra = array(  'last4'		=>     $serial_last4,  
                      'name'			=>     $device_name,  
                      'id'			=>     $identifier,
-                     'modelnum'		=>	   $modelnum
+                     'modelnum'			=>     $modelnum
                  );
 	$array_data[] = $extra;
 	$final_data = json_encode($array_data, JSON_PRETTY_PRINT);
