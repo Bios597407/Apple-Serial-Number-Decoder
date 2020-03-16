@@ -352,9 +352,9 @@ if(!empty($xml_obj) && file_exists('database.json')) {
 	$current_data = file_get_contents('database.json');
 	$array_data = json_decode($current_data, true);
 	$extra = array(  'last4'		=>     $serial_last4,  
-                     'name'			=>     $device_name,  
-                     'id'			=>     $identifier,
-                     'modelnum'			=>     $modelnum
+                     	 'name'			=>     $device_name,  
+                     	 'id'			=>     $identifier,
+                     	 'modelnum'		=>     $modelnum
                  );
 	$array_data[] = $extra;
 	$final_data = json_encode($array_data, JSON_PRETTY_PRINT);
