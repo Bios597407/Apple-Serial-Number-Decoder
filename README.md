@@ -1,5 +1,5 @@
 # Apple-Serial-Number-Decoder
 PHP Script for Decoding Apple Serial Numbers
 
-# Usage:
+__Usage:__
 Place the 3 files on your webserver. Visit index.html.
