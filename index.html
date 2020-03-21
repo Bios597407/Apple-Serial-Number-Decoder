@@ -1,12 +1,33 @@
-<html>
-        <head>
-                <title>Serial Decoder</title>
-        </head>
-        <body>
-                <form action="serialinfo.php">
-                        <label for="serial">Serial Number:</label><br>
-                        <input type="text" id="serial" name="serial" value="serial"><br><br>
-                        <input type="submit" value="Submit">
-                </form>
-        </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Serial Number Decoder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; text-align: center; }
+        table {
+                border-collapse: collapse;
+                width: 100%;
+                color: #000000;
+                font-family: monospace;
+                font-size: 16px;
+                text-align: left;
+              }
+        th {
+                background-color: #337ab7;
+                color: white;
+            }
+        tr:nth-child(even) {background-color: #f2f2f2}
+    </style>
+</head>
+<body>
+    <p>
+        <form action="serialinfo.php" method="GET">
+            <input type="text" name="serial" placeholder="Serial Number"/>
+            <input type="submit" value="Decode" class="btn btn-primary"/>
+        </form>
+    </p>
+
+</body>
 </html>
